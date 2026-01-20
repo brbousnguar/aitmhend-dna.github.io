@@ -467,5 +467,35 @@ When adding new pages or sections:
 
 ---
 
+## 🔀 GIT WORKFLOW
+
+### Branching Strategy
+**NEVER push directly to main branch. Always use feature branches and Pull Requests.**
+
+**Required Workflow:**
+1. **Create a feature branch** from main: `git checkout -b feature/description-of-changes`
+2. **Make your changes** and commit them to the feature branch
+3. **Push the feature branch** to remote: `git push origin feature/description-of-changes`
+4. **Create a Pull Request** from the feature branch to main via GitHub
+5. **Wait for PR approval** before merging to main
+
+**Branch Naming Convention:**
+- Feature branches: `feature/description` (e.g., `feature/google-search-console-setup`)
+- Bug fixes: `fix/description` (e.g., `fix/seo-meta-tags`)
+- Documentation: `docs/description` (e.g., `docs/update-readme`)
+
+**Commit Messages:**
+- Use clear, descriptive commit messages
+- Format: `Verb: Description` (e.g., `Add: Google Search Console verification file`)
+- Keep commits focused and atomic
+
+**Important:**
+- Always check current branch before committing: `git status`
+- Never use `git push origin HEAD:main` or push directly to main
+- Always create PRs for code review and approval
+- Feature branches should be created from an up-to-date main branch
+
+---
+
 **Last Updated:** January 2026
 **Maintained by:** Amazigh Lineage Heritage Project
